@@ -471,5 +471,33 @@
   <small>Sitio Diseñado por @jonmircha y escrito por <a href="https://github.com/Shugardery" target="_blank" rel="noopener">@joshdev</a></small>
 </footer>
 <script src="script.js"></script>
+<script>
+  // Insertar guión:
+  (function(w, d, s, p, a, c) {
+  w.sfButton = w.sfButton || function(){};
+  c = d.getElementsByTagName(s)[0];
+  a = d.createElement(s);
+  a.async=1;
+  a.src=p;
+  c.parentNode.insertBefore(a, c);
+  })(window, document, 'script', '//savefrom.net/js/sf-helper-agent.min.js');
+  
+  // Texto:
+  sfButton.text = 'Descargar';
+  
+  // Estilos:
+  sfButton.styles = {
+   color: 'rgba(0,0,0,0.7)',
+   textShadow: '1px 1px 1px rgba(255,255,255,0.4)',
+   fontFamily: 'Arial,Helvetica,sans-serif',
+   fontSize: '12px',
+   borderRadius: '21px',
+   backgroundColor: '#db41d5',
+   'background-image': '-webkit-linear-gradient(#db52de, #d830c7)',
+   'background-image': '-moz-linear-gradient(#db52de, #d830c7)',
+   'background-image': 'linear-gradient(#db52de, #d830c7)',
+   border: 'none'
+  };
+  </script>
 </body>
 </html>
