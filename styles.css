@@ -575,6 +575,10 @@ progress::-moz-progress-bar {
   align-items: center;
 }
 
+.line-contact {
+  text-decoration: none;
+}
+
 .logo a {
   color: var(--first-color);
   font-weight: bold;
