@@ -42,7 +42,7 @@
       console.log(err);
       let message = 
         err.statusText || "Ocurrió un error al enviar. Intenta nuevamente";
-      $response.querySelector("h3").innerHTML = 'Error{err.status}: ${message}';
+      $response.querySelector("h3").innerHTML = `Error ${err.status}: ${message}`;
     }).finally(()=> {
       $loader.classList.add("none");
       setTimeout(() => {
