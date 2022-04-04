@@ -1,4 +1,4 @@
-/* Menu */
+// Menu
 ((d)=>{
   const $btnMenu = d.querySelector(".menu-btn"),
     $menu = d.querySelector(".menu");
@@ -9,7 +9,7 @@
       $menu.classList.toggle("is-active");
     });
 
-    d.addEventListener("click", e=>{ /* Técnica de la Delegación de Eventos: Asignamos el click a un elemento superior, en este caso 'el document', 'e'  equivale a evaluar cuál es el elemento que va a detonar este click*/
+    d.addEventListener("click", e=>{ // Técnica de la Delegación de Eventos: Asignamos el click a un elemento superior, en este caso 'el document', 'e'  equivale a evaluar cuál es el elemento que va a detonar este click
       if(!e.target.matches(".menu a")) return false;
 
       $btnMenu.firstElementChild.classList.remove("none");
@@ -18,7 +18,7 @@
     });
 })(document);
 
-/* *** ContactForm *** */
+// *** ContactForm ***
 ((d) => {
   const $form = d.querySelector(".contact-form"),
     $loader = d.querySelector(".contact-form-loader"),
